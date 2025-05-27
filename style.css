@@ -1,0 +1,823 @@
+:root {
+    --olive: #768064;
+    --light: #f9f7f3;
+    --white: #fff;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant SC', sans-serif;
+    background: var(--light);
+  }
+  
+
+ .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  .hero-logo {
+    max-width: 350px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('V&A\ HeroBG.jpg');
+    background-size: cover; /*  fills the whole screen */
+    background-position: center center; /* keeps cuties centered */
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 79, 79, 0.3);
+    z-index: 1;
+  }
+  
+  .hero-bottom {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-top {
+    margin-top: .02rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+  }
+
+  .hero-date {
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: .3rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-top h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    margin: 0;
+  }
+  
+  .hero-bottom {
+    margin-bottom: 5rem;
+  }
+  
+  .hero-bottom p {
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .countdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .countdown-line {
+    width: 80%;
+    max-width: 400px;
+    height: 1px;
+    background-color: white;
+    margin: 0.5rem 0;
+    opacity: 0.7;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+.time-box {
+  text-align: center;
+}
+
+.time-box span {
+  font-size: 3rem;
+  font-family: 'Cormorant SC', serif;
+  display: block;
+}
+
+.time-box small {
+  font-family: 'Cormorant SC', serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    z-index: 2;
+  }
+
+  .gallery-section {
+    background-color: #eaece8;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 2rem;
+  }
+  
+  .swiper {
+    width: 100%;
+    max-width: 1100px; /* more space for widescreen images */
+    height: 550px;      /* taller to better showcase landscape shots */
+    margin: auto;
+    background: #ffffff;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+  }
+  
+
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* change from contain to cover */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #768064; /* olive green */
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #5c6753; /* darker olive on hover */
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+  background: #c1c6b8; /* soft greenish-gray for inactive dots */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #768064; /* olive green for active dot */
+}
+
+  .dresscode-section {
+    background-color: #ffffff;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .dresscode-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .dresscode-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 2rem;
+  }
+  
+  .divider {
+    width: 60px;
+    height: 2px;
+    background-color: #768064;
+    margin: 2rem auto;
+  }
+  
+  .dresscode-details p,
+  .outfit-inspo-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .dresscode-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #768064;
+    margin-top: 4rem;
+  }
+  
+  .pinterest-card {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .pinterest-preview {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .pinterest-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .pinterest-card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #768064;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .pinterest-embed {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hotels-section {
+    background-color: #eaece8;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .hotels-content {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .hotel-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.4rem;
+  }
+  
+  .hotels-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 1rem;
+  }
+  
+  .hotels-content p {
+    font-size: 1.3rem;
+    font-family: 'Cormorant SC', serif;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .hotel-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hotel-card {
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.00);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .hotel-card h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.25rem;
+    color: #768064;
+    margin-bottom: 1rem;
+  }
+  
+  .hotel-card p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hotel-button {
+    display: inline-block;
+    background-color: #768064;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hotel-button:hover {
+    background-color: #5c6753;
+  }
+
+  .weather-section {
+    background-color: #f9f7f3;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .weather-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .weather-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 1rem;
+  }
+  
+  .weather-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .rsvp-section {
+    background-color: #ffffff;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .rsvp-content {
+    padding-top: 50px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .rsvp-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 1rem;
+  }
+  
+  .rsvp-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+/*
+  .rsvp-section {
+    background-color: #f9f7f3;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .rsvp-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .rsvp-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #768064;
+    margin-bottom: 1rem;
+  }
+  
+  .rsvp-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .form-wrapper iframe {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    height: 600px;
+  } */
+
+  /* Small bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-5px);
+    }
+  }
+
+  .rsvp-section {
+    background-color: #ffffff; /* light background */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .rsvp-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #768064; /* olive green text */
+  }
+  
+  .rsvp-button {
+    background-color: #768064;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rsvp-button:hover {
+    background-color: #5d6a50; /* darker olive on hover */
+  }
+
+  .gallery-section {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #768064;
+    margin-bottom: 2rem;
+  }
+  
+  .swiper {
+    width: 100%;
+    max-width: 1100px;
+    height: 600px; /* adjust for desired height */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    height: 100%; /* Important: make wrapper full height */
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .swiper-slide img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+ .swiper-slide img {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+  .parents-section {
+    background-color: #fff; /* soft cream background */
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  
+  .parents-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #768064; /* Olive green */
+  }
+  
+  .parents-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap; /* 📱 Responsive: stacks on small screens */
+  }
+  
+  .parent-card {
+    background-color: transparent;
+    padding: 2rem;
+    border: 1px solid #768064;
+    border-radius: 05px;
+    font-family: 'Cormorant SC', sans-serif;
+    color: #555;
+    width: 280px;
+    text-align: center;
+  }
+
+  .parent-card h3 {
+    font-family: 'Cormorant SC';
+    color: #768064;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .parent-card p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .timeline-section {
+    background: url('your-parallax-background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #555;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: gray;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .timeline-content {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    padding: 2rem;
+  }
+  
+  
+  .timeline-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* 🎯 Vertical Line */
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+  }
+
+  /* Timeline Items */
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+
+  .timeline-item.left {
+    left: 0;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  /* Timeline Icon */
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+  
+  /* Timeline Info */
+  .timeline-info {
+    max-width: 250px;
+  }
+  
+  .timeline-info h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .timeline-info p {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .timeline-info span {
+    font-size: 1rem;
+    color: #f0f0f0;
+  }
+  
+  /* 🪄 Smooth Appear Animation */
+  .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 📱 Mobile Responsive */
+  @media (max-width: 768px) {
+    .timeline-item, .timeline-item.left, .timeline-item.right {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .timeline-line {
+      left: 20px;
+      transform: none;
+    }
+  }
+  
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .background-image {
+        background: url(V&A\ Hero\ Mobile.jpeg) no-repeat center center/cover;
+      }
+    
+  .hero-top h1 {
+    font-size: 2.5rem;
+  }
+  
+  .countdown {
+    gap: 1rem;
+  }
+
+  .time-box span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+    .hero {
+      padding: 1rem;
+      justify-content: space-around; /* distribute better for small screens */
+    }
+  
+    .hero-top h1 {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+    }
+  
+    .hero-bottom p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .countdown {
+      gap: 0.5rem;
+      flex-wrap: wrap; /* allow wrapping on very small devices */
+    }
+  
+    .time-box span {
+      font-size: 1.5rem;
+    }
+  
+    .time-box small {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-top h1 {
+      font-size: 1.8rem;
+    }
+  
+    .time-box span {
+      font-size: 1.2rem;
+    }
+  }
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .timeline-info {
+      text-align: center;
+    }
+  }  
+  
+  @media (max-width: 768px) {
+    .hero-logo {
+      max-width: 280px;
+    }
+  
+    .hero-top {
+      margin-top: 1rem;
+    }
+  }
+
+  /* Apply the animation */
+  .background-image,
+  .overlay,
+  .hero-top,
+  .hero-bottom {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  /* Different delays to make them appear one after another */
+  .background-image {
+    animation-delay: 0s;
+  }
+  
+  .overlay {
+    animation-delay: 0.5s;
+  }
+  
+  .hero-top {
+    animation-delay: 1s;
+  }
+  
+  .hero-bottom {
+    animation-delay: 1.5s;
+  }
