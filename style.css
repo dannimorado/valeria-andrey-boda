@@ -215,6 +215,133 @@
   background: #768064; /* olive green for active dot */
 }
 
+.timeline-section {
+  background-color: #eaece8; /* Or your choice */
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  color: #555;
+}
+
+.timeline-content {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  padding-top: 4rem;
+}
+
+.timeline-title {
+  text-align: center;
+  margin-bottom: 5rem; /* Separation from the timeline */
+  padding-bottom: 1rem;
+}
+
+.timeline-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #768064; /* Olive tone */
+}
+
+.map-button {
+  display: inline-block;
+  background-color: #768064;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #5c6753;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0; /* avoids crossing the title */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: #768064;
+  z-index: 0;
+}
+
+/* Timeline Items */
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 5rem;
+  width: 50%;
+  z-index: 2;
+}
+
+.timeline-item.right {
+  left: 50%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.timeline-item.left {
+  left: 0;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.timeline-box {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid #768064;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 250px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.timeline-icon-img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Text inside boxes */
+.timeline-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #768064;
+}
+
+.timeline-info p {
+  margin: 0.5rem 0;
+  color: #768064;
+}
+
+.timeline-info span {
+  font-weight: regular;
+  color: rgb(94, 94, 94);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item,
+  .timeline-item.right,
+  .timeline-item.left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - 150px);
+  }
+}
   .dresscode-section {
     background-color: #ffffff;
     padding: 6rem 2rem;
@@ -242,7 +369,7 @@
   
   .dresscode-details p,
   .outfit-inspo-text p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     margin: 0.5rem 0;
     color: #555;
@@ -595,7 +722,7 @@
     background: url('your-parallax-background.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #555;
+    background-color: #eaece8;
     padding: 6rem 2rem;
     text-align: center;
     color: gray;
@@ -623,10 +750,9 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 1px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index: 1;
+    background-color: #8b8d88;
   }
 
   /* Timeline Items */
@@ -685,11 +811,7 @@
     font-size: 1.1rem;
   }
   
-  .timeline-info span {
-    font-size: 1rem;
-    color: #f0f0f0;
-  }
-  
+ 
   /* 🪄 Smooth Appear Animation */
   .timeline-item.visible {
     opacity: 1;
