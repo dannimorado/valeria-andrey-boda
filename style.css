@@ -215,7 +215,7 @@
 }
 
 .timeline-section {
-  background-color: #eaece8; /* Or your choice */
+  background-color: #E7DED5; /* Or your choice */
   padding: 6rem 2rem;
   text-align: center;
   position: relative;
@@ -293,8 +293,8 @@
 
 .timeline-box {
   padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.10);
-  border: 1px solid #E7DED5;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #87745d;
   border-radius: 10px;
   text-align: center;
   max-width: 250px;
@@ -353,7 +353,7 @@
   }
   
   .dresscode-content h2 {
-    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #1a1a1a;
     margin-bottom: 2rem;
@@ -499,15 +499,16 @@
     height: 100%;
     background-color: rgb(0,0,0,0);
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     padding: 2rem;
   }
   
   .quote-content h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
     max-width: 700px;
+    padding-top: 4rem;
   }
   
   .no-kids-section {
@@ -838,7 +839,7 @@
     background: url('your-parallax-background.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #f8f6f4;
+    background-color: #E7DED5;
     padding: 6rem 2rem;
     text-align: center;
     color: gray;
@@ -869,7 +870,7 @@
     transform: translateX(-50%);
     width: 1px;
     height: 100%;
-    background-color: #E7DED5;
+    background-color: #87745d;
   }
 
   /* Timeline Items */
