@@ -1,5 +1,5 @@
 :root {
-    --olive: #768064;
+    --olive: #E7DED5;
     --light: #f9f7f3;
     --white: #fff;
   }
@@ -7,7 +7,7 @@
   body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Cormorant SC', sans-serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     background: var(--light);
   }
   
@@ -74,7 +74,7 @@
   }
 
   .hero-date {
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     font-size: 1.4rem;
     color: white;
     margin-bottom: .3rem;
@@ -82,7 +82,7 @@
   }
   
   .hero-top h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     font-size: 5rem;
     margin: 0;
   }
@@ -92,7 +92,7 @@
   }
   
   .hero-bottom p {
-    font-family: 'Cormorant SC', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
@@ -125,13 +125,13 @@
 }
 
 .time-box span {
-  font-size: 3rem;
-  font-family: 'Cormorant SC', serif;
+  font-size: 2rem;
+  font-family: 'Cormorant Infant',"Times New Roman", serif;
   display: block;
 }
 
 .time-box small {
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -156,9 +156,8 @@
   }
   
   .gallery-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #768064;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
+    color: #1a1a1a;
     margin-bottom: 2rem;
   }
   
@@ -196,23 +195,23 @@
   /* Navigation Arrows */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #768064; /* olive green */
+  color: #E7DED5; /* Nude */
   transition: color 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #5c6753; /* darker olive on hover */
+  color: #D5C9BF; /* darker olive on hover */
 }
 
 /* Pagination Dots */
 .swiper-pagination-bullet {
-  background: #c1c6b8; /* soft greenish-gray for inactive dots */
+  background: #E7DED5; /* soft greenish-gray for inactive dots */
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #768064; /* olive green for active dot */
+  background: #cfc7be; /* olive green for active dot */
 }
 
 .timeline-section {
@@ -238,15 +237,15 @@
 
 .timeline-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: #768064; /* Olive tone */
+  color: #1a1a1a; /* Olive tone */
 }
 
 .map-button {
   display: inline-block;
-  background-color: #768064;
-  color: white;
+  background-color: #87745d;
+  color: #ffffff;
   padding: 0.8rem 1.8rem;
   border-radius: 5px;
   text-decoration: none;
@@ -256,7 +255,7 @@
 }
 
 .map-button:hover {
-  background-color: #5c6753;
+  background-color: #c5bdb5;
 }
 
 .timeline-line {
@@ -266,7 +265,7 @@
   transform: translateX(-50%);
   width: 1px;
   height: 100%;
-  background-color: #768064;
+  background-color: #E7DED5;
   z-index: 0;
 }
 
@@ -295,7 +294,7 @@
 .timeline-box {
   padding: 1.5rem;
   background-color: rgba(255, 255, 255, 0.10);
-  border: 1px solid #768064;
+  border: 1px solid #E7DED5;
   border-radius: 10px;
   text-align: center;
   max-width: 250px;
@@ -314,12 +313,12 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   margin: 0;
-  color: #768064;
+  color: #E7DED5;
 }
 
 .timeline-info p {
   margin: 0.5rem 0;
-  color: #768064;
+  color: #1a1a1a;
 }
 
 .timeline-info span {
@@ -354,16 +353,16 @@
   }
   
   .dresscode-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     font-size: 2.5rem;
-    color: #768064;
+    color: #1a1a1a;
     margin-bottom: 2rem;
   }
   
   .divider {
     width: 60px;
     height: 2px;
-    background-color: #768064;
+    background-color: #1a1a1a;
     margin: 2rem auto;
   }
   
@@ -378,7 +377,7 @@
   .dresscode-content h3 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #768064;
+    color: #1a1a1a;
     margin-top: 4rem;
   }
   
@@ -407,7 +406,7 @@
   .pinterest-card-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
-    color: #768064;
+    color: #1a1a1a1a;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -418,8 +417,125 @@
     justify-content: center;
   }
 
+  .gifts-section {
+    background-color: #E7DED5;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .gifts-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .gifts-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+  
+  .gifts-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .gift-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .gift-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E7DED5;
+    border-radius: 10px;
+    padding: 2rem;
+    text-decoration: none;
+    width: 180px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gift-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .gift-card img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  .gift-card span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #87745d;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .quote-section {
+    background-image: url('Foto\ quote.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .quote-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .quote-content h2 {
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    max-width: 700px;
+  }
+  
+  .no-kids-section {
+    background-color: #E7DED5;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  .no-kids-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .no-kids-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+  
+  .no-kids-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+  }
+
   .hotels-section {
-    background-color: #eaece8;
+    background-color: #f9f9f9;
     padding: 6rem 2rem;
     text-align: center;
   }
@@ -438,7 +554,7 @@
   .hotels-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #768064;
+    color: Black;
     margin-bottom: 1rem;
   }
   
@@ -469,7 +585,7 @@
   .hotel-card h3 {
     font-family: 'Cormorant SC', serif;
     font-size: 1.25rem;
-    color: #768064;
+    color: #1a1a1a;
     margin-bottom: 1rem;
   }
   
@@ -482,8 +598,8 @@
   
   .hotel-button {
     display: inline-block;
-    background-color: #768064;
-    color: white;
+    background-color: #87745d;
+    color: #ffffff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
@@ -492,7 +608,7 @@
   }
   
   .hotel-button:hover {
-    background-color: #5c6753;
+    background-color: #D5C9BF;
   }
 
   .weather-section {
@@ -535,7 +651,7 @@
   .rsvp-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #768064;
+    color: #1a1a1a;
     margin-bottom: 1rem;
   }
   
@@ -602,22 +718,22 @@
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #768064; /* olive green text */
+    color: #1a1a1a; /* olive green text */
   }
   
   .rsvp-button {
-    background-color: #768064;
-    color: white;
+    background-color: #87745d;
+    color: #ffffff;
     text-decoration: none;
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Playfair Display', serif;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
   
   .rsvp-button:hover {
-    background-color: #5d6a50; /* darker olive on hover */
+    background-color: #D5C9BF; /* darker olive on hover */
   }
 
   .gallery-section {
@@ -629,7 +745,7 @@
   .gallery-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: #768064;
+    color: #1a1a1a;
     margin-bottom: 2rem;
   }
   
@@ -684,7 +800,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-bottom: 3rem;
-    color: #768064; /* Olive green */
+    color: #1a1a1a; /* Olive green */
   }
   
   .parents-cards {
@@ -698,7 +814,7 @@
   .parent-card {
     background-color: transparent;
     padding: 2rem;
-    border: 1px solid #768064;
+    border: 1px solid #E7DED5;
     border-radius: 05px;
     font-family: 'Cormorant SC', sans-serif;
     color: #555;
@@ -708,7 +824,7 @@
 
   .parent-card h3 {
     font-family: 'Cormorant SC';
-    color: #768064;
+    color: #1a1a1a;
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
@@ -722,7 +838,7 @@
     background: url('your-parallax-background.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #eaece8;
+    background-color: #f8f6f4;
     padding: 6rem 2rem;
     text-align: center;
     color: gray;
@@ -739,9 +855,10 @@
   
   
   .timeline-content h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     font-size: 2.5rem;
     margin-bottom: 5rem;
+    color: #1a1a1a
   }
   
   /* 🎯 Vertical Line */
@@ -752,7 +869,7 @@
     transform: translateX(-50%);
     width: 1px;
     height: 100%;
-    background-color: #8b8d88;
+    background-color: #E7DED5;
   }
 
   /* Timeline Items */
@@ -801,9 +918,10 @@
   }
   
   .timeline-info h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Infant', Georgia, "Times New Roman", serif;
     margin: 0;
     font-size: 1.8rem;
+    color: #1a1a1a
   }
   
   .timeline-info p {
